@@ -89,6 +89,8 @@ jobs:
         run: ls 
       - name: Deploy site 
         run: echo "deploying....."
-
-
-
+  information:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ruyn custome actions
+        uses: ./.github/actions/deploy-s3-javascript
