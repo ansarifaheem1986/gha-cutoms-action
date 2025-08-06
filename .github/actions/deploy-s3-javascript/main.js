@@ -13,4 +13,4 @@ run();
 /* Install the node in your system and run the below 
 npm init -y 
 npm install @action/core @actions/github @actions/exec
-then in the main.js import those packages. 
+then in the main.js import those packages. */
