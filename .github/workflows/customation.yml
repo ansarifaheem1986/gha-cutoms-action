@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: Get Code
         uses: actions/checkout@v3 
+      - name: Intial code build 
+        run: npm init @eslint/config
       - name: Load & Cache dependencies
         uses: ./.github/actions/cached-deps
       - name: Lint code 
