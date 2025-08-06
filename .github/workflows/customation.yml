@@ -21,7 +21,12 @@ jobs:
       - name: Intial code build 
         run: npm init @eslint/config
       - name: Load & Cache dependencies
+        id: cache-depps
         uses: ./.github/actions/cached-deps
+        with: 
+          caching: 'false'
+      - name: Output information
+        run: echo "Cache used? ${{ steps.cache.outputs.used-cache }} "
       - name: Lint code 
         run: npm run lint
   test:
